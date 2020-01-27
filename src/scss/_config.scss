@@ -1,0 +1,46 @@
+$primary-color: #4ac7c2;
+$secondary-color: rgb(90, 82, 82);
+$orange-color: #ff6a05;
+$yellow-color: #f4b02f;
+$green-color: #197a64;
+$turqoise-color: #21bda9;
+$aqua-color: #7bf2bf;
+$light-color: rgb(202, 200, 200);
+$background-opacity: rgba(0, 0, 0, 0.7);
+
+.bg-primary-light {
+  background-color: rgba(lighten($primary-color, 6), 0.85);
+}
+.bg-primary-dark {
+  background-color: rgba(darken($primary-color, 6), 0.85);
+}
+.bg-secondary-light {
+  background-color: rgba(lighten($secondary-color, 6), 0.85);
+}
+.bg-secondary-dark {
+  background-color: rgba(darken($secondary-color, 6), 0.85);
+}
+
+@mixin easeOut {
+  transition: all 0.75s ease-out;
+}
+
+//Set Text Color
+
+@function setTextColor($color) {
+  @if (lightness($color) > 40) {
+    @return rgb(56, 53, 53);
+  } @else {
+    @return #ffffff;
+  }
+}
+//Add a portrait with circle around it
+@mixin addPortrait($path) {
+  width: 300px;
+  height: 300px;
+  align-content: center;
+  background: url($path);
+  background-size: cover;
+  border-radius: 50%;
+  border: solid 3px $secondary-color;
+}

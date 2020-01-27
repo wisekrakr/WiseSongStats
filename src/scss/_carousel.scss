@@ -1,0 +1,57 @@
+.carousel-home {
+  .carousel-item {
+    height: 100vh;
+    box-shadow: inset 120px 100px 250px #000000,
+      inset -120px -100px 250px #000000;
+
+    a:hover {
+      color: rgba(darken($primary-color, 6), 0.85);
+      @include easeOut();
+    }
+
+    &.item-1 {
+      background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/philo_page/night.jpg")
+        no-repeat center center fixed;
+      background-size: cover;
+    }
+    &.item-2 {
+      background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/philo_page/morning.jpg")
+        no-repeat center center fixed;
+      background-size: cover;
+
+      .fa-code {
+        color: $secondary-color;
+      }
+    }
+    &.item-3 {
+      background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/philo_page/evening.jpg")
+        no-repeat center center fixed;
+      background-size: cover;
+
+      .fa-gamepad {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 38%;
+  text-transform: uppercase;
+  width: 100%;
+  right: 0;
+  left: 0;
+
+  h1 {
+    text-shadow: 0.1rem 0.1rem 0.1rem white;
+    color: rgba(darken($secondary-color, 6), 1);
+    padding-bottom: 1rem;
+    letter-spacing: 0.3rem;
+  }
+  h3 {
+    text-shadow: 0.1rem 0.1rem 0.1rem white;
+    color: rgba(lighten($orange-color, 6), 0.85);
+    padding-bottom: 1.6rem;
+  }
+}

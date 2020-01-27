@@ -1,0 +1,93 @@
+/*---Media Queries --*/
+@media (max-width: 992px) {
+}
+@media (max-width: 767px) {
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0); //comes in from the side
+    font-size: 25px;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      width: 175px;
+      height: 175px;
+    }
+  }
+
+  .carousel-caption {
+    h1 {
+      font-size: 2.1rem;
+      padding-bottom: 0.5rem;
+      letter-spacing: 0.15rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+      padding-bottom: 1.2rem;
+    }
+    .large-btn {
+      font-size: 1rem;
+    }
+  }
+
+  .narrow {
+    h3 {
+      font-size: 1.6rem;
+    }
+    p.lead {
+      font-size: 1.2rem;
+    }
+  }
+
+  .carousel-home {
+    .carousel-item {
+      box-shadow: inset 10px 10px 170px #000000, inset -10px -10px 170px #000000;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .narrow {
+    h3 {
+      font-size: 1.1rem;
+    }
+    p.lead {
+      font-size: 0.8rem;
+    }
+  }
+
+  .col-disco {
+    padding: 0.2rem;
+    margin: 0.5rem;
+  }
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

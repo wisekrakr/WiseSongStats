@@ -1,0 +1,542 @@
+.bg-primary-light {
+  background-color: rgba(97, 206, 202, 0.85); }
+
+.bg-primary-dark {
+  background-color: rgba(57, 185, 180, 0.85); }
+
+.bg-secondary-light {
+  background-color: rgba(106, 97, 97, 0.85); }
+
+.bg-secondary-dark {
+  background-color: rgba(74, 67, 67, 0.85); }
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.75s ease-out; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #4ac7c2;
+    transition: all 0.75s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+      background-color: #ff6a05; }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+      background-color: #ff6a05; }
+
+.navbar-brand img {
+  background-size: cover;
+  border-radius: 50%;
+  border: solid 1px #4ac7c2;
+  height: 3rem;
+  margin: 1rem; }
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+  .menu-branding, .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background: rgba(33, 189, 169, 0.9);
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.75s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    background: rgba(123, 242, 191, 0.9);
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.75s ease-out; }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu .portrait {
+    width: 300px;
+    height: 300px;
+    align-content: center;
+    background: url("https://cdn.vox-cdn.com/thumbor/9VYTZoOPQ_GAQCisPTtjPC3oJjA=/0x0:819x548/920x613/filters:focal(345x209:475x339):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/60773701/Screen_Shot_2018_08_08_at_6.54.35_PM.0.png");
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 3px #5a5252; }
+  .menu .nav-item {
+    transform: translate3d(600px, 0, 0);
+    transition: all 0.75s ease-out; }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
+    .menu .nav-item.current-item > a {
+      color: #5a5252; }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 8px 0;
+    font-weight: 700;
+    color: #383535;
+    text-decoration: none;
+    transition: all 0.75s ease-out; }
+    .menu .nav-link:hover {
+      color: #5a5252; }
+
+.nav-item:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.nav-item:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.nav-item:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.nav-item:nth-child(4) {
+  transition-delay: 0.4s; }
+
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
+.nav-item:nth-child(6) {
+  transition-delay: 0.6s; }
+
+.nav-item:nth-child(7) {
+  transition-delay: 0.7s; }
+
+.carousel-home .carousel-item {
+  height: 100vh;
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; }
+  .carousel-home .carousel-item a:hover {
+    color: rgba(57, 185, 180, 0.85);
+    transition: all 0.75s ease-out; }
+  .carousel-home .carousel-item.item-1 {
+    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/philo_page/night.jpg") no-repeat center center fixed;
+    background-size: cover; }
+  .carousel-home .carousel-item.item-2 {
+    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/philo_page/morning.jpg") no-repeat center center fixed;
+    background-size: cover; }
+    .carousel-home .carousel-item.item-2 .fa-code {
+      color: #5a5252; }
+  .carousel-home .carousel-item.item-3 {
+    background: url("https://raw.githubusercontent.com/wisekrakr/portfolio_res/master/images/philo_page/evening.jpg") no-repeat center center fixed;
+    background-size: cover; }
+    .carousel-home .carousel-item.item-3 .fa-gamepad {
+      color: #5a5252; }
+
+.carousel-caption {
+  position: absolute;
+  top: 38%;
+  text-transform: uppercase;
+  width: 100%;
+  right: 0;
+  left: 0; }
+  .carousel-caption h1 {
+    text-shadow: 0.1rem 0.1rem 0.1rem white;
+    color: #4a4343;
+    padding-bottom: 1rem;
+    letter-spacing: 0.3rem; }
+  .carousel-caption h3 {
+    text-shadow: 0.1rem 0.1rem 0.1rem white;
+    color: rgba(255, 124, 36, 0.85);
+    padding-bottom: 1.6rem; }
+
+.wrap-collabsible {
+  margin: 2rem; }
+
+input[type="checkbox"] {
+  display: none; }
+
+.lbl-toggle {
+  display: block;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.75s ease-out; }
+  .lbl-toggle .toggle-bio {
+    color: rgba(95, 239, 177, 0.85);
+    background: rgba(74, 67, 67, 0.85); }
+  .lbl-toggle .toggle-lyrics {
+    color: rgba(28, 163, 146, 0.85);
+    background: rgba(74, 67, 67, 0.85); }
+
+.lbl-toggle:hover {
+  color: rgba(97, 206, 202, 0.85); }
+
+.lbl-toggle::before {
+  content: " ";
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: 0.7rem;
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-out; }
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px); }
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out; }
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: none; }
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.collapsible-content .content-inner {
+  background: rgba(106, 97, 97, 0.85);
+  border-bottom: 1px solid rgba(74, 67, 67, 0.85);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 0.5rem 1rem; }
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  background: rgba(74, 67, 67, 0.5);
+  color: #ffffff; }
+
+.container {
+  position: relative;
+  z-index: 0; }
+
+/*================ MENU ===========*/
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+a:hover {
+  text-decoration: none; }
+
+/*================ BUTTONS ===========*/
+.btn {
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover {
+    background: #4ac7c2; }
+
+.large-btn {
+  background-color: #61ceca;
+  border-width: large;
+  border-radius: 5rem;
+  padding: 0.9rem 1.5rem;
+  white-space: normal;
+  transition: all 0.75s ease-out; }
+  .large-btn:hover {
+    background: rgba(187, 184, 184, 0.65); }
+
+.med-btn {
+  background-color: #61ceca;
+  border-width: medium;
+  border-radius: 5rem;
+  padding: 0.6rem 1.1rem;
+  margin: 1rem;
+  transition: all 0.75s ease-out; }
+  .med-btn:hover {
+    background: rgba(187, 184, 184, 0.65); }
+
+.small-btn {
+  background-color: #61ceca;
+  border-width: medium;
+  border-radius: 5rem;
+  padding: 0.3rem 0.75rem;
+  margin: 0.5rem;
+  transition: all 0.75s ease-out; }
+  .small-btn:hover {
+    background: rgba(187, 184, 184, 0.65); }
+
+/*================ TEXT STYLES ===========*/
+.text-xl {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
+
+.text-lg {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem; }
+
+.text-md {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
+
+.info-text {
+  float: right; }
+
+.artist-title {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #f4b02f; }
+
+/*================ HEADER & JUMBOTRON ===========*/
+.nav-link {
+  color: #ffffff;
+  padding-top: 1rem;
+  transition: all 0.75s ease-out; }
+  .nav-link:hover {
+    color: #5a5252; }
+
+.jumbotron {
+  border-radius: 0;
+  padding: 2rem 0 3rem; }
+  .jumbotron .jumbo-header {
+    color: #61ceca;
+    text-shadow: 2px 2px 2px #ffffff; }
+
+.jumbo-manual {
+  border-radius: 4rem;
+  border: 5px double #0275d8;
+  border-color: rgba(57, 185, 180, 0.85);
+  margin: 2rem;
+  padding: 3rem; }
+  .jumbo-manual h1 {
+    align-self: auto; }
+
+.jumbo-index {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/soul-singer-aretha-franklin-sings-in-the-atlantic-records-news-photo-155268625-1534171550.jpg?crop=1.00xw:0.767xh;0,0.120xh&resize=1200:*") no-repeat center; }
+
+.narrow {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem; }
+  .narrowa {
+    color: #0275d8; }
+
+/*================ HEADINGS ===========*/
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 800; }
+  h1.large-heading,
+  h2.large-heading,
+  h3.large-heading {
+    font-size: 4.2rem;
+    padding: 2rem !important; }
+  h1.small-heading,
+  h2.small-heading,
+  h3.small-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(97, 206, 202, 0.5); }
+  h1.x-small-heading,
+  h2.x-small-heading,
+  h3.x-small-heading {
+    margin-bottom: 1rem;
+    padding: 0.1rem 0.5rem;
+    background: rgba(97, 206, 202, 0.5); }
+
+.heading {
+  color: rgba(255, 124, 36, 0.85);
+  padding: 2rem; }
+
+h3.heading {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem; }
+
+.heading-underline {
+  width: 55vw;
+  height: 0.3rem;
+  background-color: rgba(106, 97, 97, 0.85);
+  margin: 0 auto 2rem; }
+
+/*================ LISTS ===========*/
+.list-group {
+  text-decoration: none; }
+
+/*================ CARDS ===========*/
+#card-pick {
+  transition: 0.7s ease-out;
+  transition-duration: 1.5s; }
+  #card-pick:hover {
+    transform: translate(20px); }
+    #card-pick:hover:before {
+      opacity: 1; }
+    #card-pick:hover .card-info {
+      display: initial;
+      opacity: 1;
+      transform: translate(0px); }
+  #card-pick:before {
+    content: "";
+    transition-duration: 1.5s;
+    transition: 0.5s;
+    opacity: 0; }
+  #card-pick .card-info {
+    display: none;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s; }
+
+.card-title {
+  opacity: 0.6; }
+
+.card-subtitle {
+  font-weight: 700; }
+
+.card-song .card-header {
+  background-color: rgba(38, 215, 192, 0.85);
+  color: #ffffff; }
+
+.card-song .card-body {
+  background-color: rgba(28, 163, 146, 0.85); }
+
+.card-artist .card-header {
+  background-color: rgba(151, 245, 205, 0.85);
+  color: #ffffff; }
+
+.card-artist .card-body {
+  background-color: rgba(95, 239, 177, 0.85); }
+
+.card-album .card-header {
+  background-color: rgba(30, 147, 121, 0.85);
+  color: #ffffff; }
+
+.card-album .card-body {
+  background-color: rgba(20, 97, 79, 0.85); }
+
+.card-country .card-header {
+  text-shadow: 2px 2px #000000; }
+
+.card-country .card-body {
+  background-color: rgba(106, 97, 97, 0.9); }
+
+.card-lyric {
+  margin-top: 2rem; }
+  .card-lyric .card-header {
+    background-color: rgba(38, 215, 192, 0.85);
+    color: #ffffff; }
+  .card-lyric .card-body {
+    background-color: rgba(28, 163, 146, 0.85); }
+
+.info-list {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  .info-list li {
+    background-color: rgba(106, 97, 97, 0.85); }
+
+/*================ ICONS ===========*/
+.fa-heart {
+  color: #ff0000; }
+
+.fa-list {
+  color: #800080; }
+
+.fa-play,
+.fa-flag {
+  color: #ffa500; }
+
+.fa-twitter {
+  color: #66b6fb; }
+
+.fa-tag,
+.fa-users {
+  color: #0c8d00; }
+
+.fa-history,
+.fa-deaf,
+.fa-globe {
+  color: #1c8eff; }
+
+.fa-dna,
+.fa-info {
+  color: #740003; }
+
+/*================ ROWS AND COLUMNS ===========*/
+.disco-row {
+  column-count: 3; }
+
+.col-disco {
+  padding: 0.5rem;
+  margin: 1rem; }
+
+/*---Media Queries --*/
+@media (max-width: 767px) {
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 25px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      width: 175px;
+      height: 175px; }
+  .carousel-caption h1 {
+    font-size: 2.1rem;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.15rem; }
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem; }
+  .carousel-caption .large-btn {
+    font-size: 1rem; }
+  .narrow h3 {
+    font-size: 1.6rem; }
+  .narrow p.lead {
+    font-size: 1.2rem; }
+  .carousel-home .carousel-item {
+    box-shadow: inset 10px 10px 170px #000000, inset -10px -10px 170px #000000; } }
+
+@media (max-width: 576px) {
+  .narrow h3 {
+    font-size: 1.1rem; }
+  .narrow p.lead {
+    font-size: 0.8rem; }
+  .col-disco {
+    padding: 0.2rem;
+    margin: 0.5rem; } }
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

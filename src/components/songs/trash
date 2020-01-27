@@ -1,0 +1,60 @@
+ const isMounted = useRef(null);
+  let songFm = null;
+
+  async function getData() {
+    await axios
+      .get(
+        `https://ws.audioscrobbler.com/2.0/?method=track.getInfo&limit=10&api_key=${process.env.REACT_APP_LAST_KEY}&artist=${song.artist_name}&track=${song.track_name}&format=json`
+      )
+      .then(res => {
+        songFm = res.data.track;
+      })
+      .catch(err => {
+        console.log(err);
+      })
+      .finally(() => {
+        if (isMounted.current) {
+          setLastfmSong({ songFm });
+        }
+      });
+  }
+  useEffect(() => {
+    isMounted.current = true;
+    getData();
+
+    return () => {
+      isMounted.current = false;
+    };
+  }, []);
+
+
+
+   const isMounted = useRef(null);
+  let artistFm = null;
+
+  async function getData() {
+    await axios
+      .get(
+        `https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artist.artist_name}&limit=10&api_key=${process.env.REACT_APP_LAST_KEY}&format=json`
+      )
+      .then(res => {
+        artistFm = res.data.artist;
+      })
+      .catch(err => {
+        console.log(err);
+      })
+      .finally(() => {
+        if (isMounted.current) {
+          setLastfmArtist({ artistFm });
+        }
+      });
+  }
+
+  useEffect(() => {
+    isMounted.current = true;
+    getData();
+
+    return () => {
+      isMounted.current = false;
+    };
+  }, []);

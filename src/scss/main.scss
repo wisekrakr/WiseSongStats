@@ -1,0 +1,340 @@
+@import "config"; //_congif.scss file with variables
+@import "menu"; //_menu.scss file for a responsive hamburger menu
+@import "carousel"; //_carousel.scss file for a responsive carousel index
+@import "collapsible"; //_collapsible.scss file for a collapsible part
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  background: rgba(darken($secondary-color, 6), 0.5);
+  color: setTextColor($secondary-color);
+}
+
+.container {
+  position: relative;
+  z-index: 0;
+}
+
+/*================ MENU ===========*/
+header {
+  position: fixed; //always on top
+  z-index: 2; //the bigger the number, the closer it is
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*================ BUTTONS ===========*/
+.btn {
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    background: $primary-color;
+  }
+}
+.large-btn {
+  background-color: lighten($primary-color, 6);
+
+  border-width: large;
+  border-radius: 5rem;
+  padding: 0.9rem 1.5rem;
+  white-space: normal;
+
+  @include easeOut;
+  &:hover {
+    background: rgba(darken($light-color, 6), 0.65);
+  }
+}
+
+.med-btn {
+  background-color: lighten($primary-color, 6);
+
+  border-width: medium;
+  border-radius: 5rem;
+  padding: 0.6rem 1.1rem;
+  margin: 1rem;
+  @include easeOut;
+  &:hover {
+    background: rgba(darken($light-color, 6), 0.65);
+  }
+}
+
+.small-btn {
+  background-color: lighten($primary-color, 6);
+
+  border-width: medium;
+  border-radius: 5rem;
+  padding: 0.3rem 0.75rem;
+  margin: 0.5rem;
+  @include easeOut;
+  &:hover {
+    background: rgba(darken($light-color, 6), 0.65);
+  }
+}
+
+/*================ TEXT STYLES ===========*/
+
+.text-xl {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.text-md {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.info-text {
+  float: right;
+}
+
+.artist-title {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: $yellow-color;
+}
+
+/*================ HEADER & JUMBOTRON ===========*/
+
+.nav-link {
+  color: #ffffff;
+  padding-top: 1rem;
+  @include easeOut();
+  &:hover {
+    color: $secondary-color;
+    // color: setTextColor($secondary-color);
+  }
+}
+
+.jumbotron {
+  border-radius: 0;
+  padding: 2rem 0 3rem;
+
+  .jumbo-header {
+    color: lighten($primary-color, 6);
+    text-shadow: 2px 2px 2px #ffffff;
+  }
+}
+.jumbo-manual {
+  border-radius: 4rem;
+  border: 5px double #0275d8;
+  border-color: rgba(darken($primary-color, 6), 0.85);
+  margin: 2rem;
+  padding: 3rem;
+
+  h1 {
+    align-self: auto;
+  }
+}
+
+.jumbo-index {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/soul-singer-aretha-franklin-sings-in-the-atlantic-records-news-photo-155268625-1534171550.jpg?crop=1.00xw:0.767xh;0,0.120xh&resize=1200:*")
+      no-repeat center;
+}
+
+.narrow {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+
+  &a {
+    color: #0275d8;
+  }
+}
+
+/*================ HEADINGS ===========*/
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 800;
+
+  &.large-heading {
+    // large-heading is attached to h1
+    font-size: 4.2rem;
+    padding: 2rem !important;
+  }
+
+  &.small-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 6), 0.5);
+  }
+
+  &.x-small-heading {
+    margin-bottom: 1rem;
+    padding: 0.1rem 0.5rem;
+    background: rgba(lighten($primary-color, 6), 0.5);
+  }
+}
+
+.heading {
+  color: rgba(lighten($orange-color, 6), 0.85);
+  padding: 2rem;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+.heading-underline {
+  width: 55vw;
+  height: 0.3rem;
+  background-color: rgba(lighten($secondary-color, 6), 0.85);
+  margin: 0 auto 2rem;
+}
+/*================ LISTS ===========*/
+
+.list-group {
+  text-decoration: none;
+}
+
+/*================ CARDS ===========*/
+
+#card-pick {
+  transition: 0.7s ease-out;
+  transition-duration: 1.5s;
+  &:hover {
+    transform: translate(20px);
+
+    &:before {
+      opacity: 1;
+    }
+    .card-info {
+      display: initial;
+      opacity: 1;
+      transform: translate(0px);
+    }
+  }
+  &:before {
+    content: "";
+    transition-duration: 1.5s;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .card-info {
+    display: none;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+  }
+}
+
+.card-title {
+  opacity: 0.6;
+}
+.card-subtitle {
+  font-weight: 700;
+}
+
+.card-song {
+  .card-header {
+    background-color: rgba(lighten($turqoise-color, 6), 0.85);
+    color: setTextColor($secondary-color);
+  }
+  .card-body {
+    background-color: rgba(darken($turqoise-color, 6), 0.85);
+  }
+}
+
+.card-artist {
+  .card-header {
+    background-color: rgba(lighten($aqua-color, 6), 0.85);
+    color: setTextColor($secondary-color);
+  }
+  .card-body {
+    background-color: rgba(darken($aqua-color, 6), 0.85);
+  }
+}
+
+.card-album {
+  .card-header {
+    background-color: rgba(lighten($green-color, 6), 0.85);
+    color: setTextColor($secondary-color);
+  }
+  .card-body {
+    background-color: rgba(darken($green-color, 6), 0.85);
+  }
+}
+
+.card-country {
+  .card-header {
+    text-shadow: 2px 2px #000000;
+  }
+  .card-body {
+    background-color: rgba(lighten($secondary-color, 6), 0.9);
+  }
+}
+
+.card-lyric {
+  margin-top: 2rem;
+
+  .card-header {
+    background-color: rgba(lighten($turqoise-color, 6), 0.85);
+    color: setTextColor($secondary-color);
+  }
+  .card-body {
+    background-color: rgba(darken($turqoise-color, 6), 0.85);
+  }
+}
+
+.info-list {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  li {
+    background-color: rgba(lighten($secondary-color, 6), 0.85);
+  }
+}
+
+/*================ ICONS ===========*/
+
+.fa-heart {
+  color: #ff0000;
+}
+.fa-list {
+  color: #800080;
+}
+.fa-play,
+.fa-flag {
+  color: #ffa500;
+}
+.fa-twitter {
+  color: #66b6fb;
+}
+.fa-tag,
+.fa-users {
+  color: #0c8d00;
+}
+.fa-history,
+.fa-deaf,
+.fa-globe {
+  color: #1c8eff;
+}
+.fa-dna,
+.fa-info {
+  color: #740003;
+}
+
+/*================ ROWS AND COLUMNS ===========*/
+.disco-row {
+  column-count: 3;
+}
+.col-disco {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+@import "mobile"; //run after everything else is done

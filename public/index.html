@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" scroll-behavior: smooth>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+
+    <script src="https://kit.fontawesome.com/d77738cdf0.js"></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/superhero/bootstrap.min.css"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    /> -->
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/main.css" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <title>
+      WiseSongStats | Find Out About Humans And Their Songs
+    </title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Manual functions for scrolling with button clicks and burger menu -->
+    <script>
+      // $(document).ready(function() {
+      //   // Add smooth scrolling to all links
+      //   $("a").on("click", function(event) {
+      //     // Make sure this.hash has a value before overriding default behavior
+      //     if (this.hash !== "") {
+      //       // Prevent default anchor click behavior
+      //       event.preventDefault();
+
+      //       // Store hash
+      //       var hash = this.hash;
+
+      //       // Using jQuery's animate() method to add smooth page scroll
+      //       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      //       $("html, body").animate(
+      //         {
+      //           scrollTop: $(hash).offset().top
+      //         },
+      //         800,
+      //         function() {
+      //           // Add hash (#) to URL when done scrolling (default click behavior)
+      //           window.location.hash = hash;
+      //         }
+      //       );
+      //     } // End if
+      //   });
+
+      //   /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+      //   var prevScrollpos = window.pageYOffset;
+      //   window.onscroll = function() {
+      //     // When the user scrolls down 20px from the top of the document, show the button
+      //     scrollFunction();
+      //   };
+
+      //   // To the top button
+      //   //Get the button:
+      //   const buttonToTop = document.getElementById("topBtn");
+
+      //   function scrollFunction() {
+      //     if (
+      //       document.body.scrollTop > 20 ||
+      //       document.documentElement.scrollTop > 20
+      //     ) {
+      //       buttonToTop.style.display = "block";
+      //     } else {
+      //       buttonToTop.style.display = "none";
+      //     }
+      //   }
+
+      //   const menuButton = document.querySelector(".menu-btn");
+      //   const menu = document.querySelector(".menu");
+      //   const menuNav = document.querySelector(".menu-nav");
+      //   const menuBranding = document.querySelector(".menu-branding");
+      //   const navItems = document.querySelectorAll(".nav-item"); //puts all items in an array
+      //   const navMenuItems = document.querySelectorAll(".nav-menu-item"); //puts all items in an array
+      //   const siteMenu = document.querySelector(".site-menu");
+      //   const body = document.body;
+
+      //   // Set Initial State of Menu
+
+      //   let showMenu = false; //let can be reassigned at any time
+
+      //   menuButton.addEventListener("click", toggleMenu);
+      //   navMenuItems.forEach(item =>
+      //     item.addEventListener("click", toggleMenu)
+      //   );
+
+      //   function toggleMenu() {
+      //     if (!showMenu) {
+      //       menuButton.classList.add("close");
+      //       menu.classList.add("show");
+      //       menuNav.classList.add("show");
+      //       menuBranding.classList.add("show");
+      //       navItems.forEach(item => item.classList.add("show")); //each item in nav gets show function
+      //       body.scroll = "no";
+      //       body.style.overflow = "hidden";
+
+      //       //Set Menu State
+      //       showMenu = true;
+      //     } else {
+      //       menuButton.classList.remove("close");
+      //       menu.classList.remove("show");
+      //       menuNav.classList.remove("show");
+      //       menuBranding.classList.remove("show");
+      //       navItems.forEach(item => item.classList.remove("show")); //each item in nav gets show function
+      //       body.scroll = "yes";
+      //       body.style.overflow = "visible";
+      //       //Set Menu State
+      //       showMenu = false;
+      //     }
+      //   }
+
+      //   // Collapsible for discography bios
+
+      //   let myLabels = document.querySelectorAll(".lbl-toggle");
+
+      //   Array.from(myLabels).forEach(label => {
+      //     label.addEventListener("keydown", e => {
+      //       // 32 === spacebar
+      //       // 13 === enter
+      //       if (e.which === 32 || e.which === 13) {
+      //         e.preventDefault();
+      //         label.click();
+      //       }
+      //     });
+      //   });
+      // });
+    </script>
+  </body>
+</html>
