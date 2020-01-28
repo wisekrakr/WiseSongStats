@@ -13,6 +13,7 @@ import ScrollToTop from "./components/activities/ScrollToTop";
 import { ContextController } from "./context"; //curly braces because it is not a default export
 
 import "./App.css";
+import "./bootstrap.min.css";
 import "./js/main";
 
 export default function App() {

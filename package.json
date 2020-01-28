@@ -22,7 +22,8 @@
     "eject": "react-scripts eject",
     "sass": "node-sass -w src/scss/ -o public/css/ --recursive",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build && npm run deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
