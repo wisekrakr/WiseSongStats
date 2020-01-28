@@ -17,12 +17,7 @@
     "serve": "^11.3.0"
   },
   "scripts": {
-    "start": "npm run start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "sass": "node-sass -w src/scss/ -o public/css/ --recursive",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false serve -s build"
+    "start": "serve -s build"
   },
   "eslintConfig": {
     "extends": "react-app"
