@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/WiseSongStats/static/css/main.395c3587.chunk.css",
+    "main.js": "/WiseSongStats/static/js/main.bdc85ee5.chunk.js",
+    "main.js.map": "/WiseSongStats/static/js/main.bdc85ee5.chunk.js.map",
+    "runtime-main.js": "/WiseSongStats/static/js/runtime-main.c1f93d58.js",
+    "runtime-main.js.map": "/WiseSongStats/static/js/runtime-main.c1f93d58.js.map",
+    "static/js/2.1b58b138.chunk.js": "/WiseSongStats/static/js/2.1b58b138.chunk.js",
+    "static/js/2.1b58b138.chunk.js.map": "/WiseSongStats/static/js/2.1b58b138.chunk.js.map",
+    "index.html": "/WiseSongStats/index.html",
+    "precache-manifest.266444e2e2235574f4b7560c67bf4b35.js": "/WiseSongStats/precache-manifest.266444e2e2235574f4b7560c67bf4b35.js",
+    "service-worker.js": "/WiseSongStats/service-worker.js",
+    "static/css/main.395c3587.chunk.css.map": "/WiseSongStats/static/css/main.395c3587.chunk.css.map",
+    "static/js/2.1b58b138.chunk.js.LICENSE": "/WiseSongStats/static/js/2.1b58b138.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1f93d58.js",
+    "static/js/2.1b58b138.chunk.js",
+    "static/css/main.395c3587.chunk.css",
+    "static/js/main.bdc85ee5.chunk.js"
+  ]
+}
