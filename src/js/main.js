@@ -27,7 +27,7 @@ $(document).ready(function() {
   });
 
   /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-  var prevScrollpos = window.pageYOffset;
+  // var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
     // When the user scrolls down 20px from the top of the document, show the button
     scrollFunction();
@@ -54,7 +54,7 @@ $(document).ready(function() {
   const menuBranding = document.querySelector(".menu-branding");
   const navItems = document.querySelectorAll(".nav-item"); //puts all items in an array
   const navMenuItems = document.querySelectorAll(".nav-menu-item"); //puts all items in an array
-  const siteMenu = document.querySelector(".site-menu");
+  // const siteMenu = document.querySelector(".site-menu");
   const body = document.body;
 
   // Set Initial State of Menu

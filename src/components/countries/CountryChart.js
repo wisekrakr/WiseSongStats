@@ -1,7 +1,6 @@
 import React, { useState, useEffect, Fragment } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { getCountry } from "../countries/Country";
 import Song from "../songs/Song";
 import Artist from "../artists/Artist";
 import Spinner from "../layouts/Spinner";

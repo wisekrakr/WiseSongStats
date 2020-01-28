@@ -15,8 +15,6 @@ const Discography = props => {
   const [related_artists, setRelatedArtists] = useState({});
   const [lastfm_artist, setLastfmArtist] = useState({});
   const [loading, setLoading] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [objectPerPage, setObjectPerPage] = useState(10);
 
   useEffect(() => {
     const getData = async () => {
@@ -67,13 +65,6 @@ const Discography = props => {
 
     getData();
   }, [props.match.params.id]);
-
-  const indexOfLast = currentPage * objectPerPage;
-  const indexOfFirst = indexOfLast - objectPerPage;
-  // const s = [songs];
-  // const current = s.slice(indexOfFirst, indexOfLast);
-
-  // console.log(current);
 
   if (
     artist === undefined ||

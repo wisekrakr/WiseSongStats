@@ -67,9 +67,6 @@ const Country = props => {
   );
 };
 
-const setCountry = text => {
-  countryInfo = text;
-};
 export function getCountry() {
   return countryInfo;
 }

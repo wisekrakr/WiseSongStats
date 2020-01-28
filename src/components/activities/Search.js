@@ -4,7 +4,7 @@ import axios from "axios";
 import { Context } from "../../context";
 
 const Search = props => {
-  const [state, setState] = useContext(Context);
+  const [setState] = useContext(Context);
   const [user_input, setUserInput] = useState("");
   const [song_title, setSongTitle] = useState("");
   const [artist_name, setArtistName] = useState("");
