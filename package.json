@@ -16,12 +16,13 @@
     "react-scripts": "^3.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm install -g serve && serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sass": "node-sass -w src/scss/ -o public/css/ --recursive",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
